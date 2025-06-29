@@ -3172,6 +3172,7 @@ body.is-ie .spotlights>section {
 	justify-content: center;
 	width: 50em;
 	-ms-flex: 1;
+	flex: 1;
 }
 
 .spotlights>section>.content>.inner {
@@ -4005,7 +4006,7 @@ body.is-preload #sidebar nav ul li {
 }
 
 #intro p {
-	font-size: 1.8em;
+	font-size: 1.25em;
 }
 
 @media screen and (max-width: 980px) {
