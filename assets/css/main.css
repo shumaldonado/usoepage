@@ -3132,14 +3132,12 @@ body.is-ie .spotlights>section {
 	border-radius: 0;
 	display: block;
 	position: relative;
-	width: 10em !important;
+	width: 25em;
 }
 
 .spotlights>section>.image img {
 	border-radius: 0;
 	display: block;
-	max-width: 100% !important;
-	height: auto;
 }
 
 .spotlights>section>.image:before {
