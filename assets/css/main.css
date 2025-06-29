@@ -3138,6 +3138,10 @@ body.is-ie .spotlights>section {
 .spotlights>section>.image img {
 	border-radius: 0;
 	display: block;
+	width: 150px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
 }
 
 .spotlights>section>.image:before {
