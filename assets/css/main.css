@@ -4006,8 +4006,8 @@ body.is-preload #sidebar nav ul li {
 }
 
 #intro p {
-	font-size: 1.8em;
-	transform: translateX(50px);
+	font-size: 1.4em;
+	transform: translateX(40px);
 }
 
 @media screen and (max-width: 980px) {
