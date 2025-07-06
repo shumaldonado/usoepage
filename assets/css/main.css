@@ -3700,18 +3700,6 @@ body.is-preload .wrapper.fade>.inner {
 	width: 100%;
 }
 
-#sidebar .logo {
-	display: block;
-	margin: 0 0 1.5em 0;
-	padding-left: 1em;
-	text-decoration: none;
-}
-
-#sidebar .logo img {
-	max-width: 120px;
-	display: block;
-}
-
 body.is-ie #sidebar>.inner {
 	height: 100%;
 }
@@ -4061,4 +4049,20 @@ body.is-preload #sidebar nav ul li {
 
 .idioma {
 	margin: 0.3em 0;
+}
+
+#sidebar .logo {
+	display: block;
+	margin: 0 0 1.5em 0;
+	padding-left: 0;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+#sidebar .logo img {
+	max-width: 120px;
+	display: block;
+	margin-left: 0;
+	border: none;
 }
