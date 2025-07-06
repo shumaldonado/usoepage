@@ -4053,7 +4053,7 @@ body.is-preload #sidebar nav ul li {
 
 
 #sidebar .logo {
-	float: left;
+	position: absolute;
 	align-self: flex-start;
 	/* <-- Esto lo alinea a la izquierda en el flex */
 	margin-bottom: 2em;
