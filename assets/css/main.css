@@ -3558,6 +3558,10 @@ body.is-preload .wrapper.fade>.inner {
 	color: #ffffff;
 }
 
+#header .logo {
+	margin-right: auto;
+}
+
 @media screen and (max-width: 736px) {
 
 	#header {
@@ -3694,6 +3698,10 @@ body.is-preload .wrapper.fade>.inner {
 	min-height: 100%;
 	opacity: 1;
 	width: 100%;
+}
+
+#sidebar .logo {
+	margin: 0 0 1.5em 0;
 }
 
 body.is-ie #sidebar>.inner {
@@ -4044,5 +4052,5 @@ body.is-preload #sidebar nav ul li {
 }
 
 .idioma {
-  margin: 0.3em 0;
+	margin: 0.3em 0;
 }
