@@ -4051,6 +4051,10 @@ body.is-preload #sidebar nav ul li {
 	margin: 0.3em 0;
 }
 
+#sidebar .inner {
+	padding-left: 0 !important;
+}
+
 #sidebar .logo {
 	display: block;
 	margin: 0 0 1.5em 0;
