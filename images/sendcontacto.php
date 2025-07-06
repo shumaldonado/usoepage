@@ -1,24 +1,53 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = strip_tags(trim($_POST["name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $mensaje = trim($_POST["message"]);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    // Cambiá este email por el tuyo del hosting
-    $para = "info@tudominio.com";
-    $asunto = "Nuevo mensaje desde el sitio web";
+// PHPMailer
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+require 'PHPMailer/Exception.php';
 
-    $contenido = "Nombre: $nombre\n";
-    $contenido .= "Email: $email\n\n";
-    $contenido .= "Mensaje:\n$mensaje\n";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-    $headers = "From: $nombre <$email>";
+$mail = new PHPMailer(true);
 
-    if (mail($para, $asunto, $contenido, $headers)) {
-        header("Location: gracias.html");
-        exit;
-    } else {
-        echo "Hubo un error al enviar el mensaje.";
-    }
+try {
+    // Captura datos del formulario
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // ✉️ Configurar PHPMailer
+    $mail->isSMTP();
+    $mail->Host = 'vxct17006.avnam.net';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'info@usoe.com.ar';
+    $mail->Password = 'Papill0n'; // ⚠️ Verifica que esté actualizada
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
+
+    // Destinatario
+    $mail->setFrom('info@usoe.com.ar', 'Formulario Web USOE');
+    $mail->addAddress('administracion@usoe.com.ar'); // Destinatario real
+
+    // Asunto y cuerpo
+    $mail->isHTML(true);
+    $mail->Subject = "Nuevo mensaje desde el sitio web";
+    $mail->Body = "
+        <h2>Nuevo mensaje desde la web</h2>
+        <p><strong>Nombre:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Mensaje:</strong></p>
+        <p>{$message}</p>
+    ";
+
+    $mail->send();
+
+    // Redirigir o mostrar mensaje de éxito
+    echo "<script>alert('Mensaje enviado correctamente'); window.location.href='index.html';</script>";
+
+} catch (Exception $e) {
+    echo "Error al enviar el mensaje: " . $mail->ErrorInfo;
 }
 ?>
