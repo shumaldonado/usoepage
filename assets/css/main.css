@@ -3701,7 +3701,15 @@ body.is-preload .wrapper.fade>.inner {
 }
 
 #sidebar .logo {
+	display: block;
 	margin: 0 0 1.5em 0;
+	padding-left: 1em;
+	text-decoration: none;
+}
+
+#sidebar .logo img {
+	max-width: 120px;
+	display: block;
 }
 
 body.is-ie #sidebar>.inner {
