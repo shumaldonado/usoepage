@@ -4058,9 +4058,12 @@ body.is-preload #sidebar nav ul li {
 }
 
 #sidebar .logo {
-	display: block;
-	margin: 0 0 1.5em 1em;
-	/* Ajusta el margen izquierdo si querés más espacio */
+	text-align: left;
+	margin: 0 0 1.5em 0;
+	padding-left: 0;
+}
+
+#sidebar .logo a {
 	text-decoration: none;
 	border: none;
 }
@@ -4068,5 +4071,6 @@ body.is-preload #sidebar nav ul li {
 #sidebar .logo img {
 	max-width: 120px;
 	display: block;
-	margin: 0;
+	margin-left: 0;
+	border: none;
 }
