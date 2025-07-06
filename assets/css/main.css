@@ -4053,15 +4053,19 @@ body.is-preload #sidebar nav ul li {
 
 
 #sidebar .logo {
-	position: absolute;
-	align-self: flex-start;
-	/* <-- Esto lo alinea a la izquierda en el flex */
+	width: 100%;
+	text-align: left;
 	margin-bottom: 2em;
+}
+
+#sidebar .logo a {
 	text-decoration: none;
+	display: inline-block;
 }
 
 #sidebar .logo img {
 	max-width: 120px;
 	display: block;
+	border: none;
 	margin: 0;
 }
