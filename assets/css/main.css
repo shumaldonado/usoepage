@@ -4051,18 +4051,13 @@ body.is-preload #sidebar nav ul li {
 	margin: 0.3em 0;
 }
 
-#sidebar .inner {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	text-align: left !important;
-}
 
 #sidebar .logo {
-	display: block;
-	margin: 0 0 1.5em 1em;
-	/* Ajusta el margen izquierdo si querés más espacio */
+	float: left;
+	align-self: flex-start;
+	/* <-- Esto lo alinea a la izquierda en el flex */
+	margin-bottom: 2em;
 	text-decoration: none;
-	border: none;
 }
 
 #sidebar .logo img {
