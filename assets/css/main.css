@@ -4055,18 +4055,19 @@ body.is-preload #sidebar nav ul li {
 	align-items: flex-start;
 }
 
-#sidebar .logo {
-	margin-bottom: 2em;
-}
-
-#sidebar .logo a {
-	display: inline-block;
-	text-decoration: none;
-}
-
-#sidebar .logo img {
-	max-width: 120px;
-	display: block;
+#sidebar nav ul {
+	list-style: none;
+	padding: 0;
 	margin: 0;
-	border: none;
+	text-align: left;
+}
+
+#sidebar nav li {
+	margin-bottom: 1em;
+}
+
+#sidebar nav a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
 }
