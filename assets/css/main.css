@@ -4051,21 +4051,22 @@ body.is-preload #sidebar nav ul li {
 	margin: 0.3em 0;
 }
 
+#sidebar .inner {
+	align-items: flex-start;
+}
 
 #sidebar .logo {
-	width: 100%;
-	text-align: left;
 	margin-bottom: 2em;
 }
 
 #sidebar .logo a {
-	text-decoration: none;
 	display: inline-block;
+	text-decoration: none;
 }
 
 #sidebar .logo img {
 	max-width: 120px;
 	display: block;
-	border: none;
 	margin: 0;
+	border: none;
 }
