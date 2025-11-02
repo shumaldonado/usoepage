@@ -4129,7 +4129,15 @@ body.is-preload #sidebar nav ul li {
 	}
 }
 
+/* Ajuste especial para logos más livianos visualmente */
 .logo-big {
-	max-height: 90% !important;
-	/* 🔹 los agranda un poco */
+	max-height: 110% !important;
+	/* agranda más allá del contenedor */
+	transform: scale(1.4);
+	/* 🔹 escala el logo 40% más grande */
+}
+
+/* Corrige centrado vertical tras el escalado */
+.logo-box .logo-big {
+	transform-origin: center;
 }
