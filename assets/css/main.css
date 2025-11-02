@@ -4137,6 +4137,13 @@ body.is-preload #sidebar nav ul li {
 	/* 🔹 escala el logo 40% más grande */
 }
 
+.logo-big2 {
+	max-height: 80% !important;
+	/* agranda más allá del contenedor */
+	transform: scale(1.1);
+	/* 🔹 escala el logo 40% más grande */
+}
+
 /* Corrige centrado vertical tras el escalado */
 .logo-box .logo-big {
 	transform-origin: center;
