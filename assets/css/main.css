@@ -4071,3 +4071,42 @@ body.is-preload #sidebar nav ul li {
 	text-decoration: none;
 	color: inherit;
 }
+
+/* Carrusel horizontal de logos */
+.logo-carousel {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-top: 2em;
+	padding: 1em 0;
+	position: relative;
+}
+
+.logo-carousel .logos {
+	display: inline-block;
+	animation: scroll 20s linear infinite;
+}
+
+.logo-carousel img {
+	height: 60px;
+	margin: 0 2.5em;
+	vertical-align: middle;
+	filter: grayscale(100%);
+	opacity: 0.8;
+	transition: filter 0.3s, opacity 0.3s;
+}
+
+.logo-carousel img:hover {
+	filter: grayscale(0%);
+	opacity: 1;
+}
+
+/* Animación infinita */
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
+}
