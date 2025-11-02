@@ -4084,20 +4084,25 @@ body.is-preload #sidebar nav ul li {
 .logo-carousel .logos {
 	display: flex;
 	width: max-content;
+	align-items: center;
 	animation: scroll 25s linear infinite;
 }
 
 .logo-carousel img {
-	height: 60px;
+	height: 70px;
+	/* 🔹 Tamaño uniforme */
+	width: auto;
+	/* Mantiene proporción */
 	margin: 0 2.5em;
 	filter: grayscale(100%);
 	opacity: 0.8;
-	transition: filter 0.3s, opacity 0.3s;
+	transition: filter 0.3s, opacity 0.3s, transform 0.3s;
 }
 
 .logo-carousel img:hover {
 	filter: grayscale(0%);
 	opacity: 1;
+	transform: scale(1.05);
 }
 
 /* Animación continua */
