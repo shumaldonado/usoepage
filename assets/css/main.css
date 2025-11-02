@@ -4128,3 +4128,8 @@ body.is-preload #sidebar nav ul li {
 		transform: translateX(-50%);
 	}
 }
+
+.logo-big {
+	max-height: 90% !important;
+	/* 🔹 los agranda un poco */
+}
