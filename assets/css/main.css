@@ -4148,3 +4148,19 @@ body.is-preload #sidebar nav ul li {
 .logo-box .logo-big {
 	transform-origin: center;
 }
+
+@media screen and (max-width: 1280px) {
+
+	/* Sidebar pasa a top bar */
+	#sidebar {
+		text-align: center;
+	}
+
+	#sidebar nav ul {
+		justify-content: center;
+	}
+
+	#sidebar nav ul li {
+		margin: 0 1em;
+	}
+}
